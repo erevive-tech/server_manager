@@ -1,0 +1,236 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-04-04 15:12:31.729891",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "etpl_droplet_name",
+  "etpl_server_provider",
+  "etpl_customer",
+  "column_break_1da9b",
+  "etpl_ip_address",
+  "etpl_acronis_backup",
+  "etpl_site_details_section",
+  "etpl_site",
+  "password_tab",
+  "etpl_password_section",
+  "etpl_frappe_user",
+  "etpl_frappe_user_password",
+  "etpl_db_password",
+  "column_break_4vf2n",
+  "etpl_site_admin_password",
+  "etpl_frappe_directory",
+  "version_tab",
+  "etpl_frappe_version",
+  "etpl_erpnext_version",
+  "ssh_key_user_section",
+  "etpl_ramjanali",
+  "column_break_2pyc1",
+  "laxman",
+  "column_break_qx1xq",
+  "etpl_kamesh",
+  "custom_app_tab",
+  "custom_app",
+  "etpl_custom_utility",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "naming_series",
+   "options": "ETPL.####"
+  },
+  {
+   "fieldname": "etpl_droplet_name",
+   "fieldtype": "Data",
+   "label": "Droplet Name ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "etpl_server_provider",
+   "fieldtype": "Select",
+   "label": "Server Provider",
+   "options": "\nScaleway\nDigitalocean\nAWS\nScaleway dedibox\nLocal Server\nGoogle cloud",
+   "reqd": 1
+  },
+  {
+   "fieldname": "etpl_customer",
+   "fieldtype": "Data",
+   "label": "Customer "
+  },
+  {
+   "fieldname": "column_break_1da9b",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "etpl_ip_address",
+   "fieldtype": "Data",
+   "label": "IP Address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "etpl_acronis_backup",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Acronis Backup",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "etpl_site_details_section",
+   "fieldtype": "Section Break",
+   "label": "Site Details"
+  },
+  {
+   "fieldname": "etpl_site",
+   "fieldtype": "Table",
+   "label": "Site",
+   "options": "Site",
+   "reqd": 1
+  },
+  {
+   "fieldname": "password_tab",
+   "fieldtype": "Tab Break",
+   "label": "Password "
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "etpl_password_section",
+   "fieldtype": "Section Break",
+   "label": "Password Details"
+  },
+  {
+   "fieldname": "etpl_frappe_user",
+   "fieldtype": "Data",
+   "label": "Frappe User "
+  },
+  {
+   "fieldname": "etpl_frappe_user_password",
+   "fieldtype": "Data",
+   "label": "Frappe User Password"
+  },
+  {
+   "fieldname": "etpl_db_password",
+   "fieldtype": "Data",
+   "label": "MariaDB Password"
+  },
+  {
+   "fieldname": "column_break_4vf2n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "etpl_site_admin_password",
+   "fieldtype": "Data",
+   "label": "Site Admin Password "
+  },
+  {
+   "fieldname": "etpl_frappe_directory",
+   "fieldtype": "Data",
+   "label": "Frappe installation DIrectory "
+  },
+  {
+   "fieldname": "version_tab",
+   "fieldtype": "Tab Break",
+   "label": "Version"
+  },
+  {
+   "fieldname": "etpl_frappe_version",
+   "fieldtype": "Data",
+   "label": "Frappe Version"
+  },
+  {
+   "fieldname": "etpl_erpnext_version",
+   "fieldtype": "Data",
+   "label": "ERPNext Version"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "ssh_key_user_section",
+   "fieldtype": "Section Break",
+   "label": "SSH Key User"
+  },
+  {
+   "default": "0",
+   "fieldname": "etpl_ramjanali",
+   "fieldtype": "Check",
+   "label": "RamjanAli"
+  },
+  {
+   "fieldname": "column_break_2pyc1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "laxman",
+   "fieldtype": "Check",
+   "label": "Laxman"
+  },
+  {
+   "fieldname": "column_break_qx1xq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "etpl_kamesh",
+   "fieldtype": "Check",
+   "label": "Kamesh"
+  },
+  {
+   "fieldname": "custom_app_tab",
+   "fieldtype": "Tab Break",
+   "label": "Custom App"
+  },
+  {
+   "fieldname": "custom_app",
+   "fieldtype": "Table",
+   "label": "Custom App",
+   "options": "Custom App"
+  },
+  {
+   "fieldname": "etpl_custom_utility",
+   "fieldtype": "Data",
+   "label": "Custom Utility"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Server",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-04-04 17:26:03.898692",
+ "modified_by": "Administrator",
+ "module": "Server Manager",
+ "name": "Server",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
